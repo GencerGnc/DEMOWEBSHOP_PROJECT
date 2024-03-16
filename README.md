@@ -54,27 +54,49 @@ This project is dedicated to conducting thorough testing of the DemoWebShop webs
   - As a result of the payment process, "Your name, your order has been approved. Thank you!" Verify that the message is displayed.
   - Name and surname information must be included in "name on card"
 
-### US_205 Negative | Login
-- **Objective:** Control of unsuccessful payment with Debit / Credit Card.
+### US_305  
+- **Objective:** Payment process, approval and download.
 - **Test Cases:**
-  - Login with incorrect password.
-  - Login with unregistered email.
+  - Acceptance criteria in us_304 should be provided.
+  - Payment process "Your Order is Confirmed. Tank You!" When completed with the message, verify that the total amount is the same as the price of the e-book (0.50 USD).
+  - Click the "Download" button to download the e-book to the computer.
 
-### US_206 Ordering
+### US_306 
 - **Objective:** Test the complete ordering process from product selection to checkout.
 - **Test Cases:**
-  - Place an order with a registered account.
-  - Place an order as a guest.
+  - Find a contact form button like "Contact Us" on homepage and click.
+  - Fill in the following information in the contact form: Name, e-mail, subject, message.
+  - Try to send the contact form by clicking the "Send Message" button.
+  - Verify the "Recaptcha Didn't Match" alert.
 
-### US_208 Negative | Using coupons and gift cards
-- **Objective:** Verify the system's response to invalid or expired coupons and gift cards.
+### US_307 
+- **Objective:** From Shopdemo page to shoul access to E-Junkie page.
 - **Test Cases:**
-  - Apply an expired coupon code.
-  - Apply a gift card with insufficient balance.
+  - Find the "E-Commerce By E-Junkie" link on homepage and click.
+  - Click the e-junkie logo at the top left on the opened page.
+  - Verify that URL is "https://www.e-junkie.com/".
 
-### US_209 Download the order history to the computer
-- **Objective:** Ensure users can download their order history.
-- **Test Case:** Download order history from the user profile.
+### US_308 
+- **Objective:** Access to Information Video.
+- **Test Case:** 
+  - Find the "See How it works" button on https://www.e-junkie.com/ home page.
+  - Verify that URL is "https://www.e-junkie.com/".
+  - Start to play the video in the YouTube window that opens.
+  - Turn off the window after 10 sec.
+### US_309 
+- **Objective:** Payment process, approval and download details.
+- **Test Case:** 
+  - Access the https://www.e-junkie.com/wiki/demo/  page.
+  - Find and click on the "Add To Cart" button for the Demo eBook on the page.
+  - In the opened cart window, select the payment method as "Pay using Debit Card / Credit Card".
+  - Fill in the mandatory fields in Billing Details (Email, Confirm Email, Billing Name, Billing Address 1, Billing City, Billing PostCode).
+  - Enter the card information:
+  - Use credit card number 4242 4242 4242 4242
+  - VISA, Expiration 12/2024, CVV 000
+  - Verify the message "YourName, your order is confirmed. Thank you!".
+  - Click on the Download button and download the e-book PDF to the computer.
+  - Confirm that the downloaded PDF contains the name you entered in the invoice (YourName). 
+Note: You can use ROBOT or ACTION Class Tab/Shift+Tab/Space Etc.
 
 ## Contributors
 
