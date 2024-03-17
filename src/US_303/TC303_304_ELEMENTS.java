@@ -33,12 +33,21 @@ public class TC303_304_ELEMENTS {
 
   @FindBy(css = "[class=\"Pay-Button\"]")
     public WebElement payclick;
-
-  @FindBy(xpath = "//*[@id=\"Stripe-Element\"]")
+                  //*[@id="root"]/form/div/div[2]/span[2]/span[1]/span/span/input
+  @FindBy(xpath = "//*[@id='root']/form/div/div[2]/span[1]/span[2]/div/div[2]/span/input")
     public WebElement credtCardInput;
 
-  @FindBy(css = "[name=\"__privateStripeFrame7006\"]")
+  @FindBy(name = "__privateStripeFrame8206")
     public WebElement iframeCreditCar;
 
+@FindBy(css = "[id=\"SnackBar\"]")
+    public WebElement snackBar;
+@FindBy(xpath = "//*[@id=\"root\"]/form/div/div[2]/span[2]/span[1]/span/span/input")
+    public WebElement experidationDay;
+
+@FindBy(xpath = "//*[@id=\"root\"]/form/div/div[2]/span[2]/span[2]/span/span/input")
+    public WebElement ccv;
+@FindBy(css = "[class=\"green_text_margin\"]")
+    public WebElement confirmedOrder;
 
 }
