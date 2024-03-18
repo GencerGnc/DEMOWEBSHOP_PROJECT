@@ -50,4 +50,7 @@ public class TC303_304_ELEMENTS {
 @FindBy(css = "[class=\"green_text_margin\"]")
     public WebElement confirmedOrder;
 
+@FindBy(css = "[class=\"download_btn top10\"]")
+    public WebElement download;
+
 }
