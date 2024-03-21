@@ -105,7 +105,6 @@ This project is a collaborative effort, with valuable contributions from:
 - [Ali Cömert](https://www.github.com/alicomert)
 - [Emre Yavuz](https://www.github.com/emreyavvz)
 - [Gencer Genç](https://www.github.com/GencerGnc)
-- [Medine Özdil](https://www.github.com/mdnozdl)
 - [Özgür Karakuş](https://www.github.com/ozgurrkarakus)
 
 ## Scenario Guidelines
