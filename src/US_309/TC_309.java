@@ -55,6 +55,8 @@ public class TC_309 extends BaseDriver {
         Tools.Bekle(3);
         String filePath = "C:/Users/Gencer/Downloads/demo.pdf";
 
+
+        //To open and show the downloaded pdf
         try {
             Desktop.getDesktop().open(new File(filePath));
         } catch (Exception e) {
@@ -62,12 +64,19 @@ public class TC_309 extends BaseDriver {
         }
 
         // Checking the content of the PDF file
-        PDDocument document = PDDocument.load(new File(filePath));
-        PDFTextStripper pdfStripper = new PDFTextStripper();
-        String pdfText = pdfStripper.getText(document);
+        PDDocument document = PDDocument.load(new File(filePath));//It allows you to perform various operations
+        // on PDF documents,
+        // such as opening, reading, editing or extracting text from the document.
+
+        PDFTextStripper pdfStripper = new PDFTextStripper();//Extract text from PDF file and print to screen
+
+        String pdfText = pdfStripper.getText(document);//To extract all text from a
+        // PDF document and print it to the console,
+        // extract text from the document to perform a search operation,
+        // or save the extracted text to a database
 
         String searchText = "Gencer";
-
+        //to search for the desired text
         if (pdfText.contains(searchText)) {
             System.out.println("The searched text in the PDF was found..");
         } else {
